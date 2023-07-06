@@ -19,8 +19,16 @@
         </div>
       </div>
       <div class="flexbox-body body-signup">
-        <h1>Sign-Up for The Odin Project!</h1>
+        <h2>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. Sign up
+          <em>now</em> to get started.
+        </h2>
+        <br />
+        <h2>You <em>know</em> you want to.</h2>
+        <br />
         <form class="sign-up-form">
+          <h2>Let's do this!</h2>
           <div class="form-box">
             <div class="form-row">
               <label for="fname">FIRST NAME</label>
@@ -41,7 +49,13 @@
             </div>
             <div class="form-row">
               <label for="phone">PHONE NUMBER</label>
-              <input type="tel" name="phone" id="phone" />
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                placeholder="123-456-7890"
+              />
             </div>
             <div class="form-row">
               <label for="password">PASSWORD</label>

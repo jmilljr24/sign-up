@@ -1,5 +1,12 @@
 * {
   margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.3;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .flexbox-container {
@@ -7,16 +14,18 @@
 }
 
 .flexbox-body {
-  width: 550px;
+  max-width: 700px;
+  align-self: flex-start;
   /* margin: 10px; */
   /* border: 3px solid black; */
   /* background-color: grey; */
+  flex: 1;
 }
 
 .body-logo {
   display: flex;
   width: 550px;
-  min-height: 2000px;
+  min-height: 825px;
   background-image: url("ian-dooley-aaAllJ6bmac-unsplash_550h.jpg");
   background-repeat: no-repeat;
 }
@@ -43,5 +52,34 @@
 }
 
 .body-signup {
-  min-height: 100px;
+  flex: 1;
+  margin-top: 50px;
+}
+
+.sign-up-form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: center;
+}
+.form-box {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  margin-top: 10px;
+  justify-content: center;
+  border: 3px solid grey;
+}
+
+.form-row {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-width: 200px;
+  align-items: flex-start;
+  padding-left: 30px;
+}
+.form-row label {
+  text-align: right;
 }
