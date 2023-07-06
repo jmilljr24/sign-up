@@ -10,6 +10,10 @@ body {
   background-color: #eaedf0;
 }
 
+a {
+  color: black;
+}
+
 .flexbox-container {
   display: flex;
 }
@@ -26,6 +30,7 @@ body {
 
 .body-logo {
   display: flex;
+  flex-direction: column;
   width: 550px;
   min-height: 825px;
   background-image: url("ian-dooley-aaAllJ6bmac-unsplash_550h.jpg");
@@ -51,6 +56,11 @@ body {
 
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
+}
+
+.credit {
+  margin-top: 675px;
+  margin-left: 20px;
 }
 
 .body-signup {
@@ -86,7 +96,7 @@ body {
   flex-wrap: wrap;
   min-width: 200px;
   align-items: flex-start;
-  padding-left: 15px;
+  padding-left: 30px;
   font-family: Oswald, sans-serif;
   font-size: 15px;
   margin: 5px;
